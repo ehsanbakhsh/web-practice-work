@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visibility and z-index</title>
+    <style>
+      .main {
+        border: 2px solid black;
+        margin: 20px;
+      }
+      .box {
+        border: 2px solid black;
+        height: 100px;
+        width: 100px;
+        margin: auto;
+      }
+      #box-1 {
+        background-color: blue;
+      }
+      #box-2 {
+        background-color: green;
+        visibility: hidden;
+      }
+      #box-3 {
+        background-color: violet;
+      }
+      #box-4 {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>VISIBILITY = Hidden</h1>
+      <p>
+        The visibility property specifies whether or not an element is visible.
+        <br />
+        Tip: Hidden elements take up space on the page
+        <br />Command apply on 2nd box.
+      </p>
+      <div class="box" id="box-1">01</div>
+      <div class="box" id="box-2">02</div>
+      <div class="box" id="box-3">03</div>
+      <div class="box" id="box-4">04</div>
+    </div>
+  </body>
+</html>
