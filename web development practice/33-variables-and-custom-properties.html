@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables And Custom Properties</title>
+    <style>
+      /* agr ham chahty hain k hamary variable hr jagha accessable hoo to hmain aik root folder bana pry ga jis ki madad sy ham tamam variable access kr sakty hain or root folder style k tag main he banaya jaata hy or isy banany k liyay :root{} likhna prta hy */
+
+      :root {
+        --bg-clr: rgb(208, 255, 0);
+        --clr: rgb(255, 0, 0);
+      }
+      .box {
+        /* create a variable for box color */
+        --box-color: red; /*this variable can only use in this div box */
+
+        width: 200px;
+        height: 200px;
+
+        /* background-color: teal; */
+
+        /* apply bacground color that can created in the variable */
+        background-color: var(--box-color);
+        
+        /* here i can use the background color that i created in the root folder */
+        background-color: var(--bg-clr);
+
+        margin: 10px 20px;
+        border: 5px solid black;
+
+        /* here i can use text color that i can created in the root folder */
+        color: var(--clr);
+      }
+
+      .container {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">My name is Ehsan Bakhsh</div>
+      <div class="box">My name is Ehsan Bakhsh</div>
+      <div class="box">My name is Ehsan Bakhsh</div>
+    </div>
+  </body>
+</html>
