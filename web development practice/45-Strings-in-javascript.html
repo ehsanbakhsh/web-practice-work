@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String And String Methods</title>
+</head>
+<body>
+    <div id="content"></div>
+    <div class="container">
+        <h1>About Strings</h1>
+        <p>var ABC = "This is a string"
+        <br>
+        "var" shows that its a variable. <br>
+        "ABC" shows the name of String. <br>
+        ""any thing we can write in the quotes it creates a string. WE also use single quotes.   
+        </p>
+        <br>
+        <ul>
+            <li>Here i can write how to make a string.</li>
+            <li>I can write about template.</li>
+            <li>I can show how to write 2 or more Strings in a single line.</li>
+            <li>How to find length of a variable.</li>
+            <li>Escape sequence chracter
+                <ul>
+                    <li>\n is used to move text to new line.</li>
+                    <li>\\ is used to show one backslash.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script>
+        // var string = "this";
+        var string = "this";
+        console.log(string);
+
+        var name = "Ehsan";
+        var age = 18;
+        var msg = "I am a nice person";
+
+        // console.log(name + age + msg);
+
+        var temp = `My name is ${name}. My age is ${age} and ${msg}`;
+        console.log(temp);
+
+
+        // find length of a variable
+
+        var len = name.length;
+        console.log(`Length of name is ${len}`)
+
+        // Escape seqence chracter
+
+        console.log("Hello World \n Ehsan \t bakhsh \b Ehsan")
+
+        // add html with the help of java script.
+
+        document.getElementById('content').innerHTML = '<h3> This heading is added through javascript</h3>'
+    </script>
+</body>
+</html>
