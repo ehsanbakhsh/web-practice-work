@@ -1,0 +1,1 @@
+document.write("This line will be displayed with the help of javascript.");
