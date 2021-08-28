@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodmas and OperaterPrecedence</title>
+</head>
+<body>
+    <h3>Bodmas And Operater Precedence</h3>
+    <p>
+        <ol>
+            <li>Complex arithmatic expressions can pose a problem when there aremultiple operaters in single expression.</li>
+            <li><strong>var a = 5 + 2 * 3 - 2 / 2;</strong>//result 10.</li>
+            <li>The evaluation of above expression is depends on <strong>BODMAS</strong> rule.</li>
+        </ol>
+    </p>
+    <h3>BODMAS RULE</h3>
+    <p>
+        <ol>
+            <li><strong>B</strong>
+                <ul>
+                    <li>Brackets First</li>
+                </ul>
+            </li>
+            <li><strong>O</strong>
+            <ul>
+                <li>Orders(i.e powers and square roots, etc)</li>
+            </ul>
+        </li>
+            <li><strong>DM</strong>
+            <ul>
+                <li>Division and Multiplication (Left to Right)</li>
+            </ul>
+            </li>
+            <li><strong>AS</strong>
+            <ul>
+                <li>Addition and Subtraction(Left to Right).</li>
+            </ul>
+        </li>
+        </ol>
+    </p>
+    <p>
+        <h3>Eliminating ambiguity -- BODMAS</h3>
+        <ul>
+            <li><strong>var a = 5 + 2 * (3 - 2) / 2;</strong>//result 6</li>
+            <br>
+            <ol>
+                <li>3 - 2 with brackets will be evaluated first, result 1.</li>
+                <li>2 * result of (3 - 2) si 2 * 1, result 2.</li>
+                <li>Result of 2 * (3 - 2) devided by 2 so 2 / 2, result 1.</li>
+                <li>5 + result of 2 * (3 - 2) / 2, so 5 + 1, result 6</li>
+            </ol>
+        </ul>
+    </p>
+</body>
+</html>
