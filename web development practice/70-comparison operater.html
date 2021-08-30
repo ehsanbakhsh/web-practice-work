@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison operater</title>
+</head>
+<script src="./70-comparison operater.js"></script>
+<style>
+    table{
+        border: 2px solid black;
+        padding: 10px;
+    }
+    td{
+        border: 1.5px solid black;
+        padding: 10px;
+    }
+</style>
+<body>
+    <h3>Comparison operater</h3>
+    <p>
+        <ol>
+            <li>Comparison operater are used in logical statements to determine equality or difference between variables or values. They will result in true or false only.</li>
+            <li>== and === are used for equality check.</li>
+            <li>== does not consider datatype of values being compared.</li>
+            <li>== tries to convert one of the value and compare based on that.</li>
+            <li>=== also check data type of the values on the both side should be same otherwise it will reutrn false.</li>
+            <li>For Example:</li>
+            <ul>
+                <li><strong>var a = 3;</strong></li>
+                <li><strong>console.log(a == 3);</strong>Return true.</li>
+                <li><strong>console.log(a == "3");</strong>Return true.</li>
+                <li><strong>console.log(a == 6);</strong> // Return False.</li>
+                <li><strong>console.log(a === 3);</strong>Return true.</li>
+                <li><strong>console.log(a === "3");</strong> // Return False.</li>
+                <li><strong>console.log(a === 6);</strong> // Return False.</li>
+            </ul>
+            <table>
+                <tr>
+                    <td>Opeater</td>
+                    <td>Description</td>
+                </tr>
+                <tr>
+                    <td>==</td>
+                    <td>Equal to.</td>
+                </tr>
+                <tr>
+                    <td>===</td>
+                    <td>Equal value and equal type.</td>
+                </tr>
+                <tr>
+                    <td>!=</td>
+                    <td>not equal.</td>
+                </tr>
+                <tr>
+                    <td>!==</td>
+                    <td>Not equal value or not equal type.</td>
+                </tr>
+                <tr>
+                    <td>></td>
+                    <td>Greater then.</td>
+                </tr>
+                <tr>
+                    <td><</td>
+                    <td>Less then.</td>
+                </tr>
+                <tr>
+                    <td>>=</td>
+                    <td>Greater then and equal to.</td>
+                </tr>
+                <tr>
+                    <td><=</td>
+                    <td>Less then and equal to.</td>
+                </tr>
+            </table>
+            <li>Examples:</li>
+            <ul>
+                <li>var a = 3;</li>
+                <li><strong>console.log(a == 6);</strong> // Return false</li>
+                <li><strong>console.log(a === 6);</strong> // Return false</li>
+                <li><strong>console.log(a != 6);</strong> // Return true</li>
+                <li><strong>console.log(a !== 6);</strong> // Return true</li>
+                <li><strong>console.log(a > 6);</strong> // Return false</li>
+                <li><strong>console.log(a < 6);</strong> // Return true</li>
+                <li><strong>console.log(a >= 6);</strong> // Return false</li>
+                <li><strong>console.log(a <= 6);</strong> // Return true</li>
+            </ul>
+        </ol>
+    </p>
+    <h2>Be Carefull.</h2>
+    <p>
+        <ol>
+            <li>Javascript is a dynamic language and many decisions  taken at start are still causing confusions.</li>
+            <li>Comparing different ypes of values will result in answer which is not easily understandable.</li>
+            <li>E.g: When comparing a string with a number, javascript will convert the string to a number while doing the comparison.
+            <br>
+            An empty string converts to 0.
+            <br>
+            A non-numeric string converts to NaN which is always false
+            </li>
+        </ol>
+    </p>
+<hr>
+<p>Open the console window to see some examples. :)</p>
+</body>
+</html>

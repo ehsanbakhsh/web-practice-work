@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String to number or decimal</title>
+    <script src="./69-string-to-number-or-decimal.js"></script>
+</head>
+<body>
+    <h3>Convert String to Integer.</h3>
+    <p>
+        <ol>
+            <li>If you are sure that string has number, then you have to convert it into number to perform addition.</li>
+            <li>We ned to use the parseInt function for conversion.</li>
+            <ul>
+                <li>var age = prompt("What is your age?"); //input 5</li>
+                <li>var num = 5;</li>
+                <li>var sum = parseInt(age) = num;</li>
+                <li>console.log(sum); //result 10</li>
+                
+            </ul>
+            <li>If value is not a number then parsInt will return NaN.</li>
+            <ul>
+                <li>var age = prompt("What is your age?"); //input abc</li>
+                <li>var num = 5;</li>
+                <li>var sum = parseInt(age) = num;</li>
+                <li>console.log(sum); //result NaN.</li>
+            </ul>
+        </ol>
+    </p>
+    <h3>Convert string to decimal.</h3>
+    <p>
+        <ol>
+            <li>If your string is number with dcimal places then you can use parseFloat for conversion.</li>
+            <ul>
+                <li>var age = prompt("What is your age?"); //input 5.5</li>
+                <li>var num = 5;</li>
+                <li>var sum = parseInt(age) = num;</li>
+                <li>console.log(sum); //result 10.5.</li>
+            </ul>
+        </ol>
+    </p>
+    <h3>Convert string to number.</h3>
+    <p>
+        <ol>
+            <li>In case of number() function you don't have to use parseInt or parseFloat function fo conversion.</li>
+            <ul>
+                <li>var a = Number(true); //returns 1</li>
+                <li>var b = Number;(false)//returns 0</li>
+                <li>var c = Number;("999") //returns 999</li>
+                <li>var d = Number;("999 888") //returns NaN </li>
+                <li>var e = Number("Hello"); //returns NaN</li>
+            </ul>
+        </ol>
+    </p>
+    <hr>
+    <p>Open console window to see some examples. :)</p>
+</body>
+</html>
