@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why && and || operater are called short circuit?</title>
+    <script src="./75-&&-and-||-operater-short-circuit-.js"></script>
+</head>
+<body>
+    <h3>Why && and || operater are called short circuit?</h3>
+    <p>
+        <ol>
+            <li>&& and || operater stops evaluation of epression once they find desired value.</li>
+            <li>&& stops evaluaion as soon as it finds false and returns false.</li>
+            <li>&& returns true if all values are true.</li>
+            <li>|| stopss evaluation as soon as it finds true and returns true.</li>
+            <li>|| returns false if all values are false.</li>
+            <li><strong>Examples of && operater.</strong></li>
+            <ul>
+                <li>//Returns false, evaluation stops at first value.</li>
+                <li><strong>var a = false && true && false;</strong></li>
+                <li>//Returns false, evaluation stps at last value.</li>
+                <li><strong>var b = true && true && false;</strong></li>
+                <li>//Returns false, evauation stops at second value.</li>
+                <li><strong>var c = true && false && true;</strong></li>
+            </ul>
+            <li><strong>Examples of || operater.</strong></li>
+            <ul>
+                <li>//Returns false, evaluation stops at second value.</li>
+                <li><strong>var d = false && true && false;</strong></li>
+                <li>//Returns false, evaluation stps at first value.</li>
+                <li><strong>var e = true && true && false;</strong></li>
+                <li>//Returns false, evauation stops at last value.</li>
+                <li><strong>var f = true && false && true;</strong></li>
+            </ul>
+        </ol>
+    </p>
+    <hr>
+    <p>Open the console window to see some examples. :)</p>
+</body>
+</html>
