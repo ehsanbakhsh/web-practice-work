@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Value conversion with && operater.</title>
+    <script src="./81-value-conversion-with-&&-and-||-operater.js"></script>
+</head>
+<body>
+    <h3>Value conversion with && operater.</h3>
+    <p>
+        <ol>
+            <li>var a1 ='cat' && 'dog';<strong>// t && t returns dog</strong></li>
+            <li>var a2 =false && 'cat';<strong>// f && t returns false</strong></li>
+            <li>var a3 ='cat' && false;<strong>// t && f returns false</strong></li>
+            <li>var a4 = '' && false;<strong>// f && f returns ''</strong></li>
+            <li>var a5 =false && '';<strong>// f && f returns false</strong></li>
+            <li>var a6 =0 && 1;<strong>// f && t returns 0</strong></li>
+        </ol>
+    </p>
+    <h3>Value conversion with || operater.</h3>
+    <p>
+        <ol>
+            <li>var a1 ='cat' || 'dog';<strong>// t && t returns cat</strong></li>
+            <li>var a2 =false || 'cat';<strong>// f && t returns cat</strong></li>
+            <li>var a3 ='cat' || false;<strong>// t && f returns cat</strong></li>
+            <li>var a4 = '' || false;<strong>// f && f returns false</strong></li>
+            <li>var a5 =false || '';<strong>// f && f returns ""</strong></li>
+            <li>var a6 =0 || 1;<strong>// f && t returns 1</strong></li>
+        </ol>
+    </p>
+    <hr>
+    <p>Open the console window to soo some examples.:)</p>
+</body>
+</html>
