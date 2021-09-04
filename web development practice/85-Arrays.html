@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <script src="./85-Arrays.js"></script>
+</head>
+
+<body>
+    <h3>Arrays:</h3>
+    <p>
+    <ol>
+        <li>Javascript values are used to store multiple values in a single variable.</li>
+        <li>An array is used to store a collection of data.</li>
+        <li>It is an ordered colllection which store elements in sequence.</li>
+        <li>We can use array to store list of something like this:
+            <ol type="a">
+                <li>Students</li>
+                <li>Cars</li>
+                <li>Food items</li>
+            </ol>
+        </li>
+        <li>If you want to store temperature of last 7 days in a variable, then you have to create 7 variables like
+            that;
+            <ul>
+                <li>var mondayTemperature = 35</li>
+                <li>var tuesdayTemperature = 37</li>
+                <li>var wednesdayTemperature = 33</li>
+                <li>var thursdayTemperature = 27</li>
+                <li>var fridayTemperature = 25</li>
+                <li>var saturdayTemperature = 40</li>
+                <li>var sundayTemperature = 35</li>
+            </ul>
+        </li>
+        <li>Now what if you want to store temperature of morning and evening for 7 days. That will be 14 variables.</li>
+        <li>How about temperature for a year morning and evening that 730</li>
+        <li>It will be very difficult to manage and assign names to these variables.</li>
+        <li>If you want to find out all days temperature was above 30 then it will be quite difficult.</li>
+        <li>If you want to sort temperature in ascending or descending order that will not be possible with seperate
+            multiple variables.</li>
+        <li>With arrays you can create single variables and hold all teemperatur in it.</li>
+        <li>With array you will be able to find and sort temperature easily.e.g:</li>
+        <ul>
+            <li><strong>var temperature = [34, 15 , 27, 65, 34, 28, 20]</strong></li>
+        </ul>
+    </ol>
+    </p>
+    <h3>Creating an array</h3>
+    <p>
+    <ol>
+        <li>Creating an array using array literal.</li>
+        <ul>
+            <li><strong>var food = ["Burger" , "Pizza", "Sandwich", "Snacks"];</strong></li>
+        </ul>
+        <li>Creating arrays using new kewyword.</li>
+        <ul>
+            <li><strong>var foods = new Array("Burger" , "Pizza", "Sandwich", "Snacks");</strong></li>
+        </ul>
+        <li>Both are same, First one is more recomended way to create array.</li>
+        <li>Array ccan be created for all datatypes or you can mix them in a single array.e.g:
+            <ul>
+                <li><strong>var arr1 = ["Hello", "World", "Bye"];</strong></li>
+                <li><strong>var arr2 = [29, 38, 16, 22];</strong></li>
+                <li><strong>var arr3 = [true, false, true, false, false];</strong></li>
+                <li><strong>var arr4 = [23.2, 45.8, 98.12];</strong></li>
+                <li><strong>var arr5 = [{name : "John"}, {name : "Jason"}];</strong></li>
+                <li><strong>var arr6 = [74, "Hello", true, {name : "Jason"}];</strong></li>
+            </ul>
+        </li>
+    </ol>
+    </p>
+    <h3>Accessing Array Elements:</h3>
+    <p>
+    <ol>
+        <li>You access an array element by reffering to the index number.</li>
+        <li>To access elements you provided number in square brackets.</li>
+        <ul>
+            <li><strong>var foods = ["Pizza", "Burger", "Snacks"]</strong> <br>
+                foods[0]; //Pizza
+                <br>
+                foods[1]; // burger
+                <br>
+                foods[2]; // Snacks
+            </li>
+        </ul>
+        <li>Store results in variable or show output directly: <br>
+            <strong> var foods = ["Pizza", "Burger", "Snacks"]</strong>
+            <br>
+            var a = foods[0]; // Pizza
+            <br>
+            var b = foods[1]; // Burger
+            <br>
+            var c = foods[2]; // Snacks
+        </li>
+        <li>Range of array index is from to 0 Array's length -1.</li>
+        <li>First element is on 0 index.</li>
+        <li>Second element on index 1.</li>
+        <li>Third on index 2</li>
+        <li>Last element will be on arrays length -1.e.g;
+            <ol type="a">
+                <li>Array has 5 elements then last element is on 4th index.</li>
+                <li>Array has 8 elements then last element is on 7th index.</li>
+            </ol>
+        </li>
+    </ol>
+    <h3>Accessing full array:</h3>
+    <p>
+        <ol>
+            <li>The full array can be accessed by reffering to the array name.</li>
+            <ul>
+                <li><strong>var foods = ["Pizza", "Burger" , "Snacks"];</strong>
+                <br>
+                console.log(foods); // Pizza, Burger, Snacks</li>
+            </ul>
+        </ol>
+        <h3>Accessing index that does not exist.</h3>
+        <p>
+            <ol>
+                <li>If you create array with elements 3 and try to access 4th element, it will return undefined</li>
+                <li>There will be no-error in accessing index that doees not exist.
+                    <br>
+                    <ul>
+                        <li><strong>var foods = ["Pizza", "Burger", "Snacks"];
+                            <br>
+                            console.log(foods[2]); // Snacks<br> 
+                            console.log(foods[3]); // undefined<br> 
+                            console.log(foods[8]); // undefined<br> 
+                        </strong></li>
+                    </ul>
+                </li>
+            </ol>
+        </p>
+    </p>
+    </p>
+    <hr>
+    <p>Open the console window to see some examples. :)</p>
+</body>
+
+</html>
