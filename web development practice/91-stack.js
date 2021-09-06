@@ -1,0 +1,20 @@
+var foods = [];
+
+foods.push("Pizza");
+foods.push("Burger");
+foods.push("Sandwich");
+console.log(foods);
+console.log(foods.length);
+var a1 = foods.pop();
+console.log(foods);
+console.log(foods.length);
+var a2 = foods.pop();
+console.log(foods);
+console.log(foods.length);
+console.log(a1);
+console.log(a2);
+foods.push("Snacks");
+console.log(foods);
+console.log(foods.length);
+var a3 = foods.pop();
+console.log(a3);
