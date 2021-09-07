@@ -1,0 +1,10 @@
+var a = "Hello \"world";
+var b = "Hello\'world";
+var c = "Hello\\world";
+var d = "Hello\nworld";
+var e = "Hello\tworld";
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
+console.log(e);
