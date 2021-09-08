@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indexOf() Function</title>
+    <script src="./104-indexOf-and-lastIndexOf-function.js"></script>
+</head>
+<body>
+    <h3>indexOf() Function:</h3>
+    <p>
+        <ol>
+            <li>indexOf() returns the index of the first occurance of a specified text in a string.</li>
+            <li>If not found, -1 is returned.</li>
+            <ul>
+                <li>var a = "To be or not to be";</li>
+                <li>var b = a.indexof("be");  // return 3</li>
+            </ul>
+            <li>Second optional argument in indexof() specify position to begin search in string. if not provided its defauls to 0.</li>
+            <ul>
+                <li>var a = 'To be or not to be";</li>
+                <li>var b = a.indexof("be" , 10); // return 16</li>
+            </ul>
+        </ol>
+    </p>
+    <h3>lastIndexof() Function.</h3>
+    <p>
+        <ol>
+            <li>lastIndexOf returns the index of the last occurance of a specified text in a string.</li>
+            <li>It searches backwards, from the end to the begining.</li>
+            <li>If not found, -1 is returned.</li>
+            <ul>
+                <li>var a = "To be or not to be";</li>
+                <li>var b = a.lastIndexOf("be");  // returns 16</li>
+            </ul>
+            <li>Second optional argument in lastIndexof() specify position to begin search in string. if not provided its defauls to 0.</li>
+            <ul>
+                <li>var a = 'To be or not to be";</li>
+                <li>var b = a.indexof("be" , 10); // return 3</li>
+            </ul>
+            <li>It will start looking for text 'be' from index 10 to backwards.</li>
+        </ol>
+    </p>
+</body>
+</html>

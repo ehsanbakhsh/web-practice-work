@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>charAt and replace Function</title>
+</head>
+<body>
+    <h3>charAt() Function.</h3>
+    <p>
+        <ol>
+            <li>splice() function extract the portion of string provided the starting and ending positions.</li>
+            <li>charAt() function takes single index input and return chracter at that index.</li>
+            <li>Returns empty strimgs if index does not exists on negative index provided.</li>
+            <ul>
+                <li>var a = "To be or not to be";</li>
+                <li>var b = a.charAt(7);  //return r</li>
+            </ul>
+        </ol>
+        <h3>replace() Function</h3>
+        <ol>
+            <li>The replace() function replaces a specified vslue with another value in a string</li>
+            <li>The replace() function does not change the string it is called on. It returns a new string.</li>
+            <ul>
+                <li>var a = "To be  or not to be";</li>
+                <li>var b = a.replace("be" , "Hello") // return "To Hello or not to be"</li>
+            </ul>
+            <li>By default, the replace() function replaces only the first match</li>
+            <li>To replaces all matches, use a regular expression with a /g flag (Global match) and without quotes.</li>
+            <ul>
+                <li>var a = "To be  or not to be";</li>
+                <li>var b = a.replace(/be/g , "Hello") // return "To Hello or not to Hello"</li>
+            </ul>
+        </ol>
+    </p>
+</body>
+</html>
