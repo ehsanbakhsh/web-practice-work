@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrieving and Modifying date</title>
+    <style>
+        table{
+            border: 2px solid black;
+            margin: 20px;
+            padding: 1px;
+            background-color: black;
+        }
+        td{
+            border: 2px solid black;
+            width: 150px;
+            height: 50px;
+            color: black;
+            background-color: rgb(199, 199, 199);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>Retrieving and Modifying date:</h3>
+    <p>
+        <ol>
+            <li>Once we have a date, we can access all the components of the date with various built0in methods.</li>
+            <li>The method will return ach part of the date relative to the local timezone.</li>
+            <li>Each of these methods starts with get, and will return the relative number.</li>
+        </ol>
+    </p>
+    <table>
+        <tr>
+            <td>Date/Time</td>
+                <td>Method</td>
+                <td>Range</td>
+                <td>Example</td>
+            </tr>
+            <tr>
+                <td>Year</td>
+                <td>getFullYear()</td>
+                <td>YYYY</td>
+                <td>1970</td>
+            </tr>
+            <tr>
+                <td>Month</td>
+                <td>getMonth()</td>
+                <td>0 - 11</td>
+                <td>0 = Jnauary</td>
+            </tr>
+            <tr>
+                <td>Day(of the month)</td>
+                <td>getDate()</td>
+                <td>1-31</td>
+                <td>1 = 1st of the month</td>
+            </tr>
+            <tr>
+                <td>Day (of the week)</td>
+                <td>getDay()</td>
+                <td>0 - 6</td>
+                <td>0 = Sunday</td>
+            </tr>
+            <tr>
+                <td>Hour</td>
+                <td>getHours()</td>
+                <td>0 - 23</td>
+                <td>0 = Midnight</td>
+            </tr>
+            <tr>
+                <td>Minute</td>
+                <td>getMinutes()</td>
+                <td>0 - 59</td>
+                <td>........................</td>
+            </tr>
+            <tr>
+                <td>Second</td>
+                <td>getSeconds()</td>
+                <td>0 - 59</td>
+                <td>........................</td>
+            </tr>
+            <tr>
+                <td>Milliseconds</td>
+                <td>getMilliseconds()</td>
+                <td>0 - 999</td>
+                <td>........................</td>
+            </tr>
+            <tr>
+                <td>Timestamp</td>
+                <td>getTime()</td>
+                <td>Milliseconds since epoch time</td>
+                <td>........................</td>
+            </tr>
+        </table>
+        <h2>Retrieving the Date component:</h2>
+        <p><strong>var date = newDate("June 14 2019 10:45:25");</strong></p>
+        <table>
+            <tr>
+                <td>Method</td>
+                <td>Returns</td>
+            </tr>
+            <tr>
+                <td>date.getFullYear();</td>
+                <td>// 2021</td>
+            </tr>
+            <tr>
+                <td>date.getMonts();</td>
+                <td>// 5</td>
+            </tr>
+            <tr>
+                <td>date.getDate();</td>
+                <td>// 14</td>
+            </tr>
+            <tr>
+                <td>date.getDay();</td>
+                <td>// 5</td>
+            </tr>
+            <tr>
+                <td>date.getHours();</td>
+                <td>// 10</td>
+            </tr>
+            <tr>
+                <td>date.getMinutes();</td>
+                <td>// 45</td>
+            </tr>
+            <tr>
+                <td>date.getSeconds();</td>
+                <td>// 25</td>
+            </tr>
+            <tr>
+                <td>date.getMilliseconds();</td>
+                <td>// 1560491125000</td>
+            </tr>
+        </table>
+        <h3>Modifying the Date</h3>
+        <p>
+            <ol>
+                <li>For all the <strong>get</strong> methods That we learned,there is a corresponding <strong>set</strong> method.</li>
+                <li>Where <strong>get</strong> is used to retrieve a specific component from a date, <strong>set</strong> is used to modify component of a date.</li>
+            </ol>
+            <table>
+                <tr>
+                    <td>Date/Time</td>
+                        <td>Method</td>
+                        <td>Range</td>
+                        <td>Example</td>
+                    </tr>
+                    <tr>
+                        <td>Year</td>
+                        <td>setFullYear()</td>
+                        <td>YYYY</td>
+                        <td>1970</td>
+                    </tr>
+                    <tr>
+                        <td>Month</td>
+                        <td>setMonth()</td>
+                        <td>0 - 11</td>
+                        <td>0 = Jnauary</td>
+                    </tr>
+                    <tr>
+                        <td>Day(of the month)</td>
+                        <td>setDate()</td>
+                        <td>1-31</td>
+                        <td>1 = 1st of the month</td>
+                    </tr>
+                    <tr>
+                        <td>Day (of the week)</td>
+                        <td>setDay()</td>
+                        <td>0 - 6</td>
+                        <td>0 = Sunday</td>
+                    </tr>
+                    <tr>
+                        <td>Hour</td>
+                        <td>setHours()</td>
+                        <td>0 - 23</td>
+                        <td>0 = Midnight</td>
+                    </tr>
+                    <tr>
+                        <td>Minute</td>
+                        <td>setMinutes()</td>
+                        <td>0 - 59</td>
+                        <td>........................</td>
+                    </tr>
+                    <tr>
+                        <td>Second</td>
+                        <td>setSeconds()</td>
+                        <td>0 - 59</td>
+                        <td>........................</td>
+                    </tr>
+                    <tr>
+                        <td>Milliseconds</td>
+                        <td>setMilliseconds()</td>
+                        <td>0 - 999</td>
+                        <td>........................</td>
+                    </tr>
+                    <tr>
+                        <td>Timestamp</td>
+                        <td>setTime()</td>
+                        <td>Milliseconds since epoch time</td>
+                        <td>........................</td>
+                    </tr>
+                </table>
+    </p>
+</body>
+</html>

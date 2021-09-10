@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unix Time AND Epoch time</title>
+</head>
+<body>
+    <h3>Unix Time.</h3>
+    <p>
+        <ol>
+            <li>Javascript, understands the dae based on a time stamp derived from unix time, qhich is a value consisting of the number of milliseconds that have passed since midnight on january 1st 1970. We can get the timestamp with the getTime() method.
+                <br>
+                var date = new Date();
+                <br>
+                date.getTime(); //1573110702109
+            </li>
+        </ol>
+        <h3>Epoch time.</h3>
+        <OL>
+            <Li>Epoch time, also reffered to as zero time, is represented by the date string 01 january, 1970 00:00:00 universal time(UTC), and by the 0 timestamp</Li>
+            <li>Epoch time was choosen as a stedared for computers to measure time by in earlier days of programming.
+                <br>
+                var date = new Date(0);
+                <br>
+                cosole.log(date);
+                <br>
+                //Thu Jan 01 1970 00:00:00 GMT+0000 (UTC)
+            </li>
+        </OL>
+    </p>
+</body>
+</html>

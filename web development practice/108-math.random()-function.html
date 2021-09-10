@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math.random() Function</title>
+    <script src="./108-math.random()-function.js"></script>
+    <style>
+        table{
+            border: 2px solid black;
+            margin:20px ;
+            padding: 5px;
+        }
+        td{
+            border: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Math.random() Function:</h3>
+    <p>
+        <ol>
+            <li>Suppose you want to simulate the throw of a die. Inthe simulation, you want it to randomly come up 1 , 2 , 3 , 4 , 5 and 6</li>
+            <li>If you want build a game that will allow user to guess a number.</li>
+            <li>Math.random() returns a arandom number between 0 (inclusive), an d1 (exclusive).</li>
+            <li>Everytime you execute this function it will return random value.</li>
+            <ul>
+                <li>var num = Math.random();</li>
+                <li>// Result will be like 0.525190804371081</li>
+                <li>If you want to geerate random number between some range then you have to add some calculations like:</li>
+                <li>var num = Math.random();</li>
+                <li>var num2 = (num * 6) + 1;</li>
+                <li>var dice = Math.floor(num2); // 1 to 6. </li>
+            </ul>  
+        </ol>
+    </p>
+    <h3>Other math functions:</h3>
+    <table>
+        <tr>
+            <td>Math.pow()</td>
+            <td>Math.min()</td>
+        </tr>
+        <tr>
+            <td>Math.sqrt()</td>
+            <td>Math.max()</td>
+        </tr>
+        <tr>
+            <td>Math.abs()</td>
+            <td>Math.exp()</td>
+        </tr>
+        <tr>
+            <td>Math.sin()</td>
+            <td>Math.log()</td>
+        </tr>
+        <tr>
+            <td>Math.cos()</td>
+            <td>..................</td>
+        </tr>
+    </table>
+    <hr>
+    <p>Open the console window to see some examples. :)</p>
+</body>
+</html>

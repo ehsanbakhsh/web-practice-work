@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+    <script src="./110-Date.js"></script>
+    <style>
+        table{
+            border: 2px solid black;
+            margin:20px;
+            background-color: rgb(139, 139, 138);
+        }
+        td{
+            border: 2px solid black;
+            padding: 5px;
+            background-color: rgb(188, 190, 202);
+            width: 500px;
+            height:30px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Date:</h3>
+    <p>
+        <ol>
+            <li>In javascript you might have to create a website with a calender, a train schedule, or an interface to set up appointments.</li>
+            <li>These applications need to show relevent times based on the user's current timezone.</li>
+            <li>You might to use javascript to generate a report at a ceratain time every day.</li>
+            <li>The date object is a built-in object in Javascript that stores Date and Time.</li>\
+            <li>It provides a number of built-in methods for formatting and managing that data.</li>
+            <li>Date objects are created with new data().</li>
+            <ul>
+                <li>var date = new Date(); <br> console.log(date); <br>// Thu sep 09 2021 1:26:50 GMT+0500 (Pakistan Standerd Time).</li>
+            </ul>
+            <li>This will created according to the current computer's system setting.</li>
+            <li>It will show complete data with timezone, If you change the timezone of your computer it will show different date.</li>
+        </ol>
+        <p>Here is an output that can obtain:</p>
+        <table>
+            <tr>
+                <td>Day of the week</td>
+                <td>Month</td>
+                <td>Day</td>
+                <td>Year</td>
+                <td>Hour</td>
+                <td>Minute</td>
+                <td>Second</td>
+                <td>Timezone</td>
+            </tr>
+            <tr>
+                <td>Thu</td>
+                <td>Sep</td>
+                <td>09</td>
+                <td>2021</td>
+                <td>01</td>
+                <td>26</td>
+                <td>50</td>
+                <td>GMT+0500</td>
+            </tr>
+        </table>
+    </p>
+
+    <h3>Creating Date objects:</h3>
+    <ol>
+        <li>There are 4 ways to create a new date object.</li>
+        <ul>
+            <li>new Date()</li>
+            <li>new Date(year , month , day , hours , minutes , seconds , milliseconds)</li>
+            <li>new Date (milliseconds)</li>
+            <li>new Date(date string)</li>
+        </ul>
+    </ol>
+    <hr>
+    <p>Open the console window to see some examples.:)</p>
+</body>
+</html>
