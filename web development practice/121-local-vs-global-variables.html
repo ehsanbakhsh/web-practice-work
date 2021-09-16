@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local vs Global variables</title>
+    <script src="./121-local-vs-global-variables.js"></script>
+    <style>
+        table{
+            border: 2px solid black;
+            margin-top: 20px;
+        }
+        td{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h3>Local vs Global variables:</h3>
+    <p>
+        <ol>
+            <li>Variables can have local and global scope.</li>
+            <li>A global variable is one that's declared in the main body of your code, not inside a function.</li>
+            <li>A local variable is one that's declared inside a function.</li>
+            <li>A local variable can be either a parameter of the function, which is declared implicityby being named as a parameter, or a variable declared explicity in the function with the var keyword.</li>
+            <li>Global variable is meaningful in every secton of your code, weather that code is in the main body or in any of the functions.</li>
+            <li>Local variable is the one thats meaningful only within the function that declares it.</li>
+            <li>There are two differences between global and local variables where they're declared, and where they're known and can be used.</li>
+            <table cellpadding="10px" cellspacing = "3px">
+                <header>
+                    <tr style="background-color: rgb(197, 197, 197);">
+                        <td colspan = "2" style="text-align: center;"><strong>Global Variables</strong></td>
+                        <td style="text-align: center;"><strong>Local variables</strong></td>
+                    </tr>
+                </header>
+                <body>
+                    <tr>
+                        <td style="width: 30px; background-color: rgb(197, 197, 197);" >0</td>
+                        <td>Declared in the main code.</td>
+                        <td>Declared in a function.</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgb(197, 197, 197);">02</td>
+                        <td>Known everywhere, Useable everywhere.</td>
+                        <td>Known only inside the function, useable only inside the function.</td>
+                    </tr>
+                </body>
+            </table>
+        </ol>
+    </p>
+    <hr>
+    <p>Open the console window to see some examples. :)</p>
+</body>
+</html>
