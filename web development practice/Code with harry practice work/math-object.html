@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math object</title>
+</head>
+<body>
+    <h2>Math:</h2>
+    <p>
+        <strong>Math </strong>is a buit-in object that has properties and methods for mathematical constants and functions. Its not a function object.
+        <br>
+        Math works with the <strong> number</strong> type, it doesnt work with <strong> BigInt</strong>.
+    </p>
+
+    <script>
+
+        // Printing  math objects
+        let m = Math;
+        console.log(m);
+
+        // Printing constants of math objects
+
+        console.log("The value of MATH.E is " , Math.E);
+        console.log("The value of MATH.PI is " , Math.PI);
+        console.log("The value of MATH.LN2 is " , Math.LN2);
+        console.log("The value of MATH.SQRT1_2 is " , Math.SQRT1_2);
+        console.log("The value of MATH.LOG2E is " , Math.LOG2E);
+
+
+        // Printing the functions of math objects
+
+        let a = 34.56414;
+        let b = 56;
+
+        console.log("The value of A and B is " , a , " and " ,b);
+        console.log('The value o0f rounded a and b is ' , Math.round(a) , " and " , Math.round(b));
+
+
+        console.log("3 raised to the power of 2 is " , Math.pow(3,2));
+        console.log("2 raised to the power of 12 is " , Math.pow(2,12));
+        console.log("1 raised to the power of 2 is " , Math.pow(1,2));
+
+
+        console.log("The square root of 36 is " , Math.sqrt(36));
+        console.log("The square root of 64 is " , Math.sqrt(64));
+        console.log("The square root of 50 is " , Math.sqrt(50));
+
+        // ceil and floor
+        // Math.ceil returns rounded up value
+        // Math.floor returns rounded down value
+        console.log("5.5 rounded up to the nearest integer in ceil function is " , Math.ceil(5.5));
+        console.log("5.5 rounded down to the nearest integer in floor function is " , Math.floor(5.5));
+
+        // Abs function
+        console.log("The absolute value of 5.66 is " , Math.abs(5.66));
+        console.log("The absolute value of -5.66 is " , Math.abs(-5.66));
+
+        // Trignometric functions
+
+        console.log("The value of sin(PI) is " , Math.sin(Math.PI));
+        console.log("The value of cos(PI) is " , Math.cos(Math.PI));
+        console.log("The value of tan(PI) is " , Math.tan(Math.PI));
+        console.log("The value of sin(PI/2) is " , Math.sin(Math.PI/2));
+        console.log("The value of cos(PI/2) is " , Math.cos(Math.PI/2));
+        console.log("The value of tan(PI/2) is " , Math.tan(Math.PI/2));
+
+
+        // min and max functions
+
+        console.log("Minimum value in 4545 , 5244 and 6365 is " , Math.min(4545 , 5244 , 6365));
+        console.log("Maximum value in 452 , 545 and 689 is " , Math.max(452 , 545, 689));
+
+
+        // Generating a random number
+
+        let r = Math.random;
+
+        // Generating random number between (a and b) [(a , b) = a + (b - a)*Math.random()]
+        let a1 = 1;
+        let b1 = 100;
+        let r1_100 = a1 + (b1 - a1)*Math.random();
+        console.log('The random number is' , r1_100);
+        console.log('The rounded random number is' , Math.ceil(r1_100));
+        
+
+    </script>
+</body>
+</html>

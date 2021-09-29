@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>setTimeOut and setTimeIn</title>
+    <style>
+      .container{
+        font-size: 30px;
+        background-color: blanchedalmond;
+        border: 2px solid grey;
+        padding: 34px;
+        margin: 4px;
+        text-align: center;
+      }
+      #time{
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>setTimeOut and setTimeIn:</h3>
+
+    <div class="container">
+      The current time is <span id="time"></span>
+    </div>
+    <script>
+      console.log("This is just a tutorial.");
+      // setTimeOut --> Allows us to run the function once after the intervel of time.
+      // clearTimeOut --> Allows us to run the function repeatedly after the intervel of time.
+
+// **********************************************************************************
+
+    //     Ehsan(" Ehsan");
+    //   function fun1(name){
+    //     console.log("Hello Good Morning" + name);
+    //   }
+    // fun1();
+
+
+// **********************************************************************************
+
+
+        // function fun1(name){
+        // console.log("Hello Good Morning" + name);
+        // }
+        // setTimeout(fun1 ,5000 , " Ehsan");
+
+
+// *********************************************************************************
+
+
+        // function fun1(name , byText){
+        // console.log("Hello Good Morning" + name + byText);
+        // }
+        // setTimeout(fun1 ,5000 , " Ehsan" , "Take Care");
+
+
+// *****************************************************************
+
+
+function displayTime(){
+  time = new Date();
+  console.log(time);
+  document.getElementById('time').innerHTML = time;
+}
+setInterval(displayTime , 1000);
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
